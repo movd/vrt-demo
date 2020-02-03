@@ -1,0 +1,18 @@
+{
+  "name": "resemblejs-pptr",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve:static-html": "serve static-html --listen 8080 --no-clipboard --no-compression"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^2.1.0",
+    "resemblejs": "^3.2.3",
+    "serve": "^11.3.0"
+  }
+}
