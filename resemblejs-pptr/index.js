@@ -57,7 +57,7 @@ const compareScreenshots = async (
     await fsPromises.writeFile(absoluteDiffFilePath, data.getBuffer());
     return { deviation: data.misMatchPercentage, diff: absoluteDiffFilePath };
   }
-  return { deviation: null, diff: null };
+  return { deviation: data.misMatchPercentage, diff: null };
 };
 
 (async () => {
